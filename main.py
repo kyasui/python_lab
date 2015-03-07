@@ -9,20 +9,20 @@ class Player:
     if self.is_human == False:
       return randint(0,2)
     else:
-      recognized_input = False
+      is_recognized_input = False
 
-      while recognized_input == False:
+      while is_recognized_input == False:
         play = raw_input('ROCK, PAPER or SCISSORS? ')
         play = play.lower()
 
         if play == 'rock':
-          recognized_input = True
+          is_recognized_input = True
           return 0
         elif play == 'paper':
-          recognized_input = True
+          is_recognized_input = True
           return 1
         elif play == 'scissors':
-          recognized_input = True
+          is_recognized_input = True
           return 2
         else:
           print('Unrecognized play... Try again...')
